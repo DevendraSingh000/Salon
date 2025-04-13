@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav-link {
+    position: relative;
+    padding-bottom: 3px;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: orange;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.9s ease-in-out;
+  }
+  
+  .nav-link.red::after {
+    transform: scaleX(1);
+  }
+  
