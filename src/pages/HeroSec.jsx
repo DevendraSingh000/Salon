@@ -8,7 +8,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-function Hero() {
+function HeroSec() {
     const sectionRef = useRef([]);
     
       useEffect(() => {
@@ -74,4 +74,4 @@ function Hero() {
     )
 }
 
-export default Hero
+export default HeroSec

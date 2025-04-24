@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import Hero from '../pages/hero'
 import Specialities from '../pages/Specialities'
 import Prices from '../pages/Prices'
 import Shops from '../pages/Shops'
@@ -14,6 +13,7 @@ import ContectForm from '../pages/ContectForm'
 import Footer from '../pages/Footer'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import HeroSec from '../pages/HeroSec'
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -87,7 +87,7 @@ function Home() {
 
 
       {/* Other Sections */}
-      <Hero />
+      <HeroSec />
       <Specialities />
       <Prices />
       {/* <Shops /> */}
